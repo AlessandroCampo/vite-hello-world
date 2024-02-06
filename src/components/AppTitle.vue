@@ -1,12 +1,15 @@
 <script>
+export default {
+    props: ['titleText'],
+}
 </script>
 
 <template>
-    <h1> My first Vite app! </h1>
+    <h1 ref="title"> {{ titleText }}</h1>
 </template>
 
 <style scoped>
 h1 {
-    color: green;
+    color: red
 }
 </style>
